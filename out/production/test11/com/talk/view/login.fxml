@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Login">
+   <children>
+      <TextField fx:id="username" layoutX="170.0" layoutY="146.0" prefHeight="30.0" prefWidth="260.0" />
+      <TextField fx:id="userpw" layoutX="170.0" layoutY="200.0" prefHeight="32.0" prefWidth="260.0" />
+      <Label layoutX="108.0" layoutY="146.0" prefHeight="30.0" prefWidth="51.0" text="账号" textAlignment="CENTER" />
+      <Label layoutX="108.0" layoutY="200.0" prefHeight="30.0" prefWidth="51.0" text="密码" textAlignment="CENTER" />
+      <Button fx:id="loginbtn" layoutX="170.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#onLogin" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #2176fe;" text="登录" textFill="WHITE" wrapText="true" />
+      <Label layoutX="243.0" layoutY="69.0" prefHeight="30.0" prefWidth="203.0" text="登录页面">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" fx:id="registerlab" layoutY="312.0" onMouseClicked="#onRegister" prefHeight="20.0" prefWidth="74.0" text="注册账号" />
+      <Label layoutX="170.0" layoutY="312.0" text="找回密码" />
+   </children>
+</AnchorPane>

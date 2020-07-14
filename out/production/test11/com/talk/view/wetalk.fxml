@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="516.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Wetalk">
+   <children>
+      <TextArea fx:id="ChatList" layoutY="36.0" prefHeight="411.0" prefWidth="600.0" />
+      <TextArea fx:id="talkcontext" layoutX="17.0" layoutY="461.0" prefHeight="30.0" prefWidth="505.0" />
+      <Button fx:id="sendbtn" layoutX="530.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#sendMessage" text="发送" />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="504.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Login">
+   <children>
+      <TextField fx:id="username" focusTraversable="false" layoutX="141.0" layoutY="265.0" prefHeight="30.0" prefWidth="260.0" promptText="账号" />
+      <Button fx:id="loginbtn" layoutX="141.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#onLogin" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #2176fe;" text="登录" textFill="WHITE" wrapText="true" />
+      <Label fx:id="registerlab" layoutX="435.0" layoutY="411.0" onMouseClicked="#onRegister" prefHeight="32.0" prefWidth="74.0" text="  注册账号" textFill="#2176fe" />
+      <ImageView fx:id="loginbac" fitHeight="212.0" fitWidth="684.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/loginback.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeimg" fitHeight="38.0" fitWidth="35.0" layoutX="474.0" layoutY="-3.0" onMouseClicked="#closestage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/closeimg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="439.0" layoutY="-1.0" onMouseClicked="#minStage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/minimg.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="userpw" layoutX="141.0" layoutY="314.0" prefHeight="30.0" prefWidth="260.0" promptText="密码" />
+   </children>
+</AnchorPane>

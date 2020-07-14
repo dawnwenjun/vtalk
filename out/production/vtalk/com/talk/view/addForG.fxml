@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="259.0" prefWidth="600.0" style="-fx-background-color: #fcd6d6;" stylesheets="/com/talk/css/addforg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.AddForG">
+   <children>
+      <Label fx:id="addgroupabel" layoutX="357.0" layoutY="43.0" onMouseClicked="#clickgroup" prefHeight="50.0" prefWidth="91.0" text="加群" textAlignment="CENTER" textFill="#806c6c">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="addfriendlabel" layoutX="164.0" layoutY="34.0" onMouseClicked="#clickfriend" prefHeight="67.0" prefWidth="122.0" text="加好友" textAlignment="CENTER" textFill="#c8383a" textOverrun="CLIP">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <TextField fx:id="addnum" layoutX="83.0" layoutY="136.0" prefHeight="39.0" prefWidth="356.0" />
+      <Button layoutX="462.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#sendForG" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #f35e5e;" text="发送" textFill="WHITE" />
+      <ImageView fitHeight="39.0" fitWidth="31.0" layoutX="563.0" layoutY="4.0" onMouseClicked="#closestage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/closew.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="31.0" layoutX="525.0" layoutY="4.0" onMouseClicked="#minstage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/minimg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

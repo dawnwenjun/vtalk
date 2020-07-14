@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainpane" prefHeight="646.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Main">
+   <children>
+      <Accordion />
+      <Label fx:id="loginLable" layoutX="104.0" layoutY="26.0" prefHeight="52.0" prefWidth="200.0" text="昵称">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="136.0" prefHeight="500.0" prefWidth="371.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="friendtab" style="height: 100px;" text="  好友  ">
+            <content>
+              <AnchorPane maxHeight="800.0" minHeight="0.0" minWidth="0.0" prefHeight="625.0" prefWidth="371.0">
+                     <children>
+                        <ListView fx:id="friendlist" prefHeight="460.0" prefWidth="371.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="grouptab" text="  群聊   ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="371.0">
+                     <children>
+                        <Accordion layoutX="22.0" layoutY="39.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="imgview" fitHeight="71.0" fitWidth="73.0" layoutX="22.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" smooth="false" style="-fx-border-radius: 50;" />
+      <Label fx:id="autograph" layoutX="104.0" layoutY="78.0" prefHeight="20.0" prefWidth="193.0" text="个性签名" />
+   </children>
+</AnchorPane>

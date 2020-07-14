@@ -1,0 +1,54 @@
+.list-cell{
+    -fx-text-fill: #292e34;
+    -fx-background-color:#fcd6d6;
+}
+.list-cell:selected {
+    -fx-text-fill: #292e34;
+    -fx-background-color: #f1cccc;
+}
+.list-cell:filled:hover {
+    -fx-text-fill: #292e34;
+    -fx-background-color: #f1cccc;
+}
+/* 修改TabPane的Pane区域背景颜色 */
+.tab-pane {
+    -fx-background-color: #f1cccc;
+}
+/* 修改Tab的背景颜色 */
+.tab {
+    -fx-background-color: #f1cccc;
+}
+/* 修改顶栏的背景颜色 */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border, #f1cccc;
+}
+/* 修改Tab中文本的颜色 */
+.tab-label {
+    -fx-text-fill: #806d6d;
+}
+/* 子代选择器，Tab选中的时候选择其子元素tab-label */
+.tab:selected .tab-label {
+    -fx-text-fill:#c8383a;
+}
+/* tab选中时设置背景颜色 */
+.tab:selected {
+    -fx-background-color: #ebc7c7;
+}
+/* Tab选中的时候选中其边框并修改样式 */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #f1cccc;
+}
+.tab-pane *.tab-header-area *.tab-header-background {
+    -fx-background-color:transparent;
+}
+
+.tab-pane {
+    -fx-font-size: 18;
+    -fx-tab-min-width:157px;
+    -fx-tab-max-width:157px;
+    -fx-tab-min-height:40px;
+    -fx-tab-max-height:40px;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="568.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.test">
+   <children>
+      <ListView fx:id="friendlist" onMouseClicked="#clickitem" prefHeight="476.0" prefWidth="361.0" />
+      <Button layoutX="161.0" layoutY="511.0" mnemonicParsing="false" onMouseClicked="#clickbtn" text="Button" />
+   </children>
+</AnchorPane>

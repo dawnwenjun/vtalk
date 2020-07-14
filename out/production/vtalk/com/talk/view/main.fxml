@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainpane" prefHeight="709.0" prefWidth="371.0" style="-fx-background-color: #f35e5e;" stylesheets="/com/talk/css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Main">
+   <children>
+      <Accordion />
+      <Label fx:id="loginLable" layoutX="104.0" layoutY="26.0" prefHeight="52.0" prefWidth="200.0" text="昵称" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="136.0" prefHeight="521.0" prefWidth="371.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="friendtab" closable="false" text="  好友  ">
+            <content>
+              <AnchorPane maxHeight="800.0" minHeight="0.0" minWidth="0.0" prefHeight="625.0" prefWidth="371.0">
+                     <children>
+                        <ListView fx:id="friendlist" onMouseClicked="#clickfrienditem" prefHeight="487.0" prefWidth="371.0" style="-fx-background-color: #fcd6d6;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="grouptab" text="  群聊   ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="371.0">
+                     <children>
+                        <ListView fx:id="grouplist" onMouseClicked="#clickgroupitem" prefHeight="487.0" prefWidth="371.0" style="-fx-background-color: #fcd6d6;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="imgview" fitHeight="71.0" fitWidth="73.0" layoutX="22.0" layoutY="35.0" onMouseClicked="#updateimg" pickOnBounds="true" preserveRatio="true" smooth="false" style="-fx-border-radius: 50;" />
+      <Label fx:id="autograph" layoutX="104.0" layoutY="78.0" prefHeight="20.0" prefWidth="193.0" text="个性签名" textFill="WHITE" />
+      <Label layoutY="657.0" prefHeight="52.0" prefWidth="371.0" style="-fx-background-color: #fcd6d6;" />
+      <ImageView fx:id="addimg" fitHeight="30.0" fitWidth="35.0" layoutX="14.0" layoutY="668.0" onMouseClicked="#addforg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/do.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="338.0" layoutY="3.0" onMouseClicked="#closeStage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/closew.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="306.0" layoutY="5.0" onMouseClicked="#minstage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/minimg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

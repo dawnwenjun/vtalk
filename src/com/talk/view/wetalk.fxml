@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="742.0" prefWidth="578.0" style="-fx-background-color: #fcd6d6;" stylesheets="/com/talk/css/addforg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talk.controller.Wetalk">
+   <children>
+      <TextArea fx:id="talkcontext" layoutY="572.0" prefHeight="99.0" prefWidth="578.0" promptText="请输入..." style="-fx-background-color: #f35e5e;" />
+      <Button fx:id="sendbtn" layoutX="464.0" layoutY="692.0" mnemonicParsing="false" onMouseClicked="#sendMessage" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #f35e5e;" text="发送" textFill="WHITE" />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="4.0" layoutY="64.0" prefHeight="502.0" prefWidth="578.0" style="-fx-background-color: #fcd6d6;" vbarPolicy="ALWAYS">
+         <content>
+            <FlowPane fx:id="wetalklist" prefHeight="505.0" prefWidth="582.0" style="-fx-background-color: #fcd6d6;" styleClass="ba" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="friendnamelabel" alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="52.0" prefWidth="583.0" style="-fx-background-color: #f35e5e;" text="aa" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="545.0" layoutY="8.0" onMouseClicked="#closeStage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/closeimg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="506.0" layoutY="8.0" onMouseClicked="#minstage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../server/otherimg/minimg2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

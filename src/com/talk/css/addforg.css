@@ -1,0 +1,18 @@
+#talkcontext .scroll-pane .content{
+    -fx-background-color:  #fcd6d6;
+}
+#messagetext .scroll-pane .content{
+    -fx-background-color:  #fcd6d6;
+}
+.list-cell{
+    -fx-text-fill: #292e34;
+    -fx-background-color:#fcd6d6;
+}
+.list-cell:selected {
+    -fx-text-fill: #292e34;
+    -fx-background-color: #f1cccc;
+}
+.list-cell:filled:hover {
+    -fx-text-fill: #292e34;
+    -fx-background-color: #f1cccc;
+}
